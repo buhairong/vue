@@ -11,7 +11,12 @@
         名：<input type="text" placeholder="Last Name" v-model="lastName" ><br>
         姓名1（单向）：<input type="text" placeholder="Full Name1" v-model="fullName1" ><br>
         姓名2（单向）：<input type="text" placeholder="Full Name2" v-model="fullName2" ><br>
-        姓名3（双向）：<input type="text" placeholder="Full Name3" ><br>
+        姓名3（双向）：<input type="text" placeholder="Full Name3" v-model="fullName3"><br>
+
+        <p>{{fullName1}}</p>
+        <p>{{fullName1}}</p>
+        <p>{{fullName1}}</p>
+
     </div>
 </body>
 </html>
@@ -26,6 +31,16 @@
         computed:{
             fullName1(){
                 return this.firstName + " " + this.lastName
+            },
+            fullName3:{
+                get(){
+                    return this.firstName + " " + this.lastName;
+                },
+                set(value){
+                    const names = value.split(" ");
+                    this.firstName = names[0];
+                    this.lastName = names[1];
+                }
             }
         },
         watch:{
