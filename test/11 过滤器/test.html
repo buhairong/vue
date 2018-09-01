@@ -17,9 +17,9 @@
 </body>
 </html>
 <script>
-    Vue.filter("dateString",function(value,format){
+    Vue.filter("dateString",function(value,format="YYYY-MM-DD HH:mm:ss"){
 
-        return moment(value).format(format || "YYYY-MM-DD HH:mm:ss");
+        return moment(value).format(format);
     })
 
     new Vue({
