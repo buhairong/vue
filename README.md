@@ -1,4 +1,4 @@
-npm install -g vue-cli
+﻿npm install -g vue-cli
 vue init webpack vue_demo
 cd vue_demo
 npm install
@@ -8,3 +8,7 @@ npm run dev
 npm install -g http-server
 cd dist
 hs
+
+npm install -g serve
+serve dist
+访问: http://localhost:5000
