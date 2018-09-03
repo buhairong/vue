@@ -5,13 +5,13 @@
 </template>
 
 <script>
-    export default {
-      data(){
-        return {
-          msg:"Hello Vue Component"
-       }
+  export default {
+    data () {
+      return {
+        msg: 'Hello Vue Component'
       }
     }
+  }
 </script>
 
 <style>
