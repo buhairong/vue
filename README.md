@@ -12,3 +12,5 @@ hs
 npm install -g serve
 serve dist
 访问: http://localhost:5000
+
+npm install --save pubsub-js

@@ -1,14 +1,19 @@
 <template>
   <div class="todo-container">
     <div class="todo-wrap">
-      <TodoHeader :addTodo="addTodo"/>
-      <TodoList :todos="todos" :deleteTodo="deleteTodo"/>
+      <!--<TodoHeader :addTodo="addTodo"/>-->
+      <!--<TodoHeader @addTodo="addTodo"/>-->
+      <TodoHeader ref="header"/>
+      <!--<TodoList :todos="todos" :deleteTodo="deleteTodo"/>-->
+      <TodoList :todos="todos"/>
       <TodoFooter :todos="todos" :deleteCompleteTodos="deleteCompleteTodos" :selectAllTodos="selectAllTodos"/>
+
     </div>
   </div>
 </template>
 
 <script>
+  import PubSub from 'pubsub-js'
   import TodoHeader from './components/TodoHeader.vue'
   import TodoList from './components/TodoList.vue'
   import TodoFooter from './components/TodoFooter.vue'
@@ -18,6 +23,13 @@
       return {
         todos:JSON.parse(localStorage.getItem('todos_key') || '[]')
       }
+    },
+    mounted () {
+      this.$refs.header.$on('addTodo',this.addTodo);
+
+      PubSub.subscribe('deleteTodo',(msg,index) => {
+        this.deleteTodo(index);
+      })
     },
     methods:{
       addTodo(todo){

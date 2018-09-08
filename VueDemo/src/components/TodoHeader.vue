@@ -7,7 +7,7 @@
 <script>
     export default {
       props:{
-        addTodo:Function
+        //addTodo:Function
       },
       data () {
         return {
@@ -25,7 +25,8 @@
             title,
             complete:false
           }
-          this.addTodo(todo);
+          //this.addTodo(todo);
+          this.$emit('addTodo',todo);
           this.title='';
         }
       }
