@@ -15,9 +15,13 @@
 
     </div>
   </div>-->
-  <div>
+  <!--<div>
       <div v-if="!repoUrl">loading...</div>
       <div v-else>most star repo is <a :href="repoUrl">{{repoName}}</a></div>
+  </div>-->
+  <div class="container">
+    <Search />
+    <UsersMain />
   </div>
 </template>
 
@@ -28,9 +32,16 @@
   import TodoFooter from './components/TodoFooter.vue'
   import storageUtil from './util/storageUtil'*/
 
-  export default {
+  import Search from './components/Search.vue'
+  import Main from './components/Main.vue'
 
-    data() {
+  export default {
+    components: {
+      Search,
+      UsersMain:Main
+    }
+
+    /*data() {
       return {
         repoUrl:'',
         repoName:''
@@ -38,7 +49,7 @@
     },
     mounted () {
       const url = `https://api.github.com/search/repositories?q=v&sort=stars`;
-      /*this.$http.get(url).then(
+      /!*this.$http.get(url).then(
         response => {
           const result = response.data;
           const mostRepo = result.items[0];
@@ -48,7 +59,7 @@
         reponse => {
           alert('请求失败');
         }
-      )*/
+      )*!/
 
       axios.get(url).then(response => {
         const result = response.data;
@@ -58,7 +69,7 @@
       }).catch(error => {
         alert('请求失败1');
       })
-    }
+    }*/
 
     /*data () {
       return {
