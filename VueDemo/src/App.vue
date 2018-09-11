@@ -1,10 +1,10 @@
 <template>
-  <div class="todo-container">
+  <!--<div class="todo-container">
     <div class="todo-wrap">
-      <!--<TodoHeader :addTodo="addTodo"/>-->
-      <!--<TodoHeader @addTodo="addTodo"/>-->
+      &lt;!&ndash;<TodoHeader :addTodo="addTodo"/>&ndash;&gt;
+      &lt;!&ndash;<TodoHeader @addTodo="addTodo"/>&ndash;&gt;
       <TodoHeader ref="header"/>
-      <!--<TodoList :todos="todos" :deleteTodo="deleteTodo"/>-->
+      &lt;!&ndash;<TodoList :todos="todos" :deleteTodo="deleteTodo"/>&ndash;&gt;
       <TodoList :todos="todos"/>
       <TodoFooter :todos="todos" :deleteCompleteTodos="deleteCompleteTodos" :selectAllTodos="selectAllTodos"/>
       <TodoFooter>
@@ -14,19 +14,55 @@
       </TodoFooter>
 
     </div>
+  </div>-->
+  <div>
+      <div v-if="!repoUrl">loading...</div>
+      <div v-else>most star repo is <a :href="repoUrl">{{repoName}}</a></div>
   </div>
 </template>
 
 <script>
-  import PubSub from 'pubsub-js'
+  /*import PubSub from 'pubsub-js'
   import TodoHeader from './components/TodoHeader.vue'
   import TodoList from './components/TodoList.vue'
   import TodoFooter from './components/TodoFooter.vue'
+  import storageUtil from './util/storageUtil'*/
 
   export default {
-    data () {
+
+    data() {
       return {
-        todos:JSON.parse(localStorage.getItem('todos_key') || '[]')
+        repoUrl:'',
+        repoName:''
+      }
+    },
+    mounted () {
+      const url = `https://api.github.com/search/repositories?q=v&sort=stars`;
+      /*this.$http.get(url).then(
+        response => {
+          const result = response.data;
+          const mostRepo = result.items[0];
+          this.repoUrl = mostRepo.html_url;
+          this.repoName = mostRepo.name;
+        },
+        reponse => {
+          alert('请求失败');
+        }
+      )*/
+
+      axios.get(url).then(response => {
+        const result = response.data;
+        const mostRepo = result.items[0];
+        this.repoUrl = mostRepo.html_url;
+        this.repoName = mostRepo.name;
+      }).catch(error => {
+        alert('请求失败1');
+      })
+    }
+
+    /*data () {
+      return {
+        todos:storageUtil.readTodos()
       }
     },
     computed:{
@@ -66,16 +102,18 @@
     watch:{
       todos:{
         deep:true,
-        handler:function(value){
-          localStorage.setItem('todos_key',JSON.stringify(value));
-        }
+        /!*handler:function(value){
+          //localStorage.setItem('todos_key',JSON.stringify(value));
+          storageUtil.saveTodos(value);
+        }*!/
+        handler:storageUtil.saveTodos
       }
     },
     components:{
       TodoHeader,
       TodoList,
       TodoFooter
-    }
+    }*/
   }
 </script>
 
