@@ -16,6 +16,9 @@
 </template>
 
 <script>
+    import PubSub from 'pubsub-js'
+    import axios from 'axios'
+
     export default {
       data () {
         return {
@@ -24,6 +27,29 @@
           users:null,
           errorMsg:''
         }
+      },
+      mounted() {
+        PubSub.subscribe('search',(msg,searchName) => {
+          const url =`https://api.github.com/search/users?q=${searchName}`;
+          this.firstView = false;
+          this.loading = true;
+          this.users = null;
+          this.errorMsg = '';
+          axios.get(url).then(response => {
+            const result = response.data;
+            const users = result.items.map(item => ({
+              url:item.html_url,
+              avatar_url:item.avatar_url,
+              name:item.login
+            }));
+
+            this.loading = false;
+            this.users = users;
+          }).catch(error => {
+            this.loading = false;
+            this.errorMsg = '请求失败';
+          })
+        })
       }
     }
 </script>
