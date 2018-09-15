@@ -15,7 +15,10 @@
         <div class="col-xs-6">
           <div class="panel">
             <div class="panel-body">
-              <router-view></router-view>
+              <keep-alive>
+                <router-view msg="abc"></router-view>
+              </keep-alive>
+
               <!--<div>
                 <h2>about组件</h2>
                 <p>接收外部数据：atguigu</p>
