@@ -1,46 +1,37 @@
 <template>
-  <div>
-    <p>click {{count}} times,count is {{evenOrOdd}}</p>
-    <button @click="add">+</button>
-    <button @click="jian">-</button>
-    <button @click="oddNum">increment if odd</button>
-    <button @click="async">increment async</button>
+  <div class="todo-container">
+    <div class="todo-wrap">
+      <TodoHeader/>
+      <TodoList/>
+      <TodoFooter/>
+    </div>
   </div>
+
 </template>
 
 <script>
+  import TodoHeader from './components/TodoHeader.vue'
+  import TodoList from './components/TodoList.vue'
+  import TodoFooter from './components/TodoFooter.vue'
+  import storageUtil from './util/storageUtil'
+
   export default {
-    data () {
-      return {
-        count : 0
-      }
-    },
-    computed: {
-      evenOrOdd() {
-        return this.count%2===0?'偶数':'奇数'
-      }
-    },
-    methods: {
-      add() {
-        ++this.count
-      },
-      jian() {
-        --this.count
-      },
-      oddNum() {
-        if(this.count%2===0){
-          ++this.count
-        }
-      },
-      async() {
-        setTimeout(()=>{
-          ++this.count
-        },1000)
-      }
+    components:{
+      TodoHeader,
+      TodoList,
+      TodoFooter
     }
   }
 </script>
 
 <style>
-
+  .todo-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .todo-container .todo-wrap {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
 </style>
