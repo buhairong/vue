@@ -1,70 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="259c39db-2f3b-41b8-a9ea-40bee79d3748" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src-count/App.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src-count/App1.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src-count/components/HelloWorld.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src-count/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src-count/store.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/Add.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/Item.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/List.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/Main.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/Search.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/TodoFooter.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/TodoHeader.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/TodoItem.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/components/TodoList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/actions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/getters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/mutation-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/mutations.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/store/state.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/src/util/storageUtil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_demo/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuex_todo/src/base.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/router/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/views/About.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/views/Home.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/views/Message.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/views/MessageDetail.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VueDemo/src/views/News.vue" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VueDemo/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/VueDemo/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/VueDemo/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/code/VueDemo/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/VuexTest/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/code/VuexTest/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/VuexTest/src/App.vue" afterPath="$PROJECT_DIR$/code/VuexTest/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/mint-ui/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/lib/mint-ui.common.js" afterPath="$PROJECT_DIR$/node_modules/mint-ui/lib/mint-ui.common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/lib/tab-item/index.js" afterPath="$PROJECT_DIR$/node_modules/mint-ui/lib/tab-item/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/lib/tabbar/index.js" afterPath="$PROJECT_DIR$/node_modules/mint-ui/lib/tabbar/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/packages/loadmore/src/loadmore.vue" afterPath="$PROJECT_DIR$/node_modules/mint-ui/packages/loadmore/src/loadmore.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/packages/palette-button/cooking.conf.js" afterPath="$PROJECT_DIR$/node_modules/mint-ui/packages/palette-button/cooking.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/packages/tab-item/src/tab-item.vue" afterPath="$PROJECT_DIR$/node_modules/mint-ui/packages/tab-item/src/tab-item.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mint-ui/packages/tabbar/src/tabbar.vue" afterPath="$PROJECT_DIR$/node_modules/mint-ui/packages/tabbar/src/tabbar.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-lazyload/build.js" afterPath="$PROJECT_DIR$/node_modules/vue-lazyload/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-lazyload/src/lazy-container.js" afterPath="$PROJECT_DIR$/node_modules/vue-lazyload/src/lazy-container.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-lazyload/src/lazy.js" afterPath="$PROJECT_DIR$/node_modules/vue-lazyload/src/lazy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-lazyload/src/listener.js" afterPath="$PROJECT_DIR$/node_modules/vue-lazyload/src/listener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vue-lazyload/vue-lazyload.js" afterPath="$PROJECT_DIR$/node_modules/vue-lazyload/vue-lazyload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuexDemo/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/vuexDemo/build/webpack.base.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuexDemo/test/unit/jest.conf.js" afterPath="$PROJECT_DIR$/vuexDemo/test/unit/jest.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/index.html" afterPath="$PROJECT_DIR$/vuex_demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/package-lock.json" afterPath="$PROJECT_DIR$/vuex_demo/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/package.json" afterPath="$PROJECT_DIR$/vuex_demo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/src/App.vue" afterPath="$PROJECT_DIR$/vuex_demo/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/src/components/HelloWorld.vue" afterPath="$PROJECT_DIR$/vuex_demo/src/components/HelloWorld.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_demo/src/main.js" afterPath="$PROJECT_DIR$/vuex_demo/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_todo/src/App.vue" afterPath="$PROJECT_DIR$/vuex_todo/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vuex_todo/src/components/Footer.vue" afterPath="$PROJECT_DIR$/vuex_todo/src/components/Footer.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vuex_demo/src/assets/logo.png" afterPath="$PROJECT_DIR$/vuex_demo/src-count/assets/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vuex_demo/src/router/index.js" afterPath="$PROJECT_DIR$/vuex_demo/src-count/router/index.js" />
-    </list>
+    <list default="true" id="259c39db-2f3b-41b8-a9ea-40bee79d3748" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -353,16 +290,15 @@
       <workItem from="1539219548846" duration="5713000" />
       <workItem from="1539309341546" duration="5784000" />
       <workItem from="1539354644524" duration="2740000" />
-      <workItem from="1539440237034" duration="3839000" />
+      <workItem from="1539440237034" duration="3997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34578000" />
+    <option name="totallyTimeSpent" value="34736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17715959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
